@@ -2,7 +2,36 @@
 <html>
 <head>
     <title>Labwork 1: Hello World</title>
-    <style></style>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Raleway:300i,400');
+
+body {
+ height: 500px;
+  background-color: #cccccc;
+  background-image: radial-gradient(lightgrey, teal);
+  font-family: 'Raleway', sans-serif;
+   position: justify;
+   width: auto; 
+   margin: 5%;
+}
+
+
+h1 {
+   text-align: center;
+}
+
+ul {
+   text-align: center;
+    width: 14%;
+    margin: auto;
+}
+
+#github {
+   text-align: center;
+   font-weight: bold;
+   font-style: italic; 
+}
+    </style>
 </head>
     <body>
         <h1>Sun Kim</h1>
@@ -24,7 +53,7 @@
             end up looking at interior designs and art.</p>';
             echo '<p>This assignment was a little difficult due to having no experience in PHP. Trying to learn all the commands/statements and trying to figure out the correct commands/statements got a little 
             confusing. Definitely with more practice, it will be more smooth. I cannot wait to keep reading the PHP and MySQL book to see what is in store for me! 
-            I will keep practing on HTML, CSS, and PHP to get better and better each day. </p>'
+            I will keep practicing on HTML, CSS, and PHP to get better and better each day. </p>'
         
         ?>
     </body>
