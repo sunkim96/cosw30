@@ -1,15 +1,15 @@
 <?php
-    $first_name = $POST['first_name'];
-    $last_name = $POST['last_name'];
+    $first_name = $_POST['first_name'];
+    $last_name = $_POST['last_name'];
     $email = $_POST['email'];
-    $gender = $POST['gender'];
-    $age = $POST['age'];
-    $interest = $POST['interest'];
-    $contribution = $POST['contribution'];
-    $yesno = $POST['yesno'];
-    $comments = $POST['comments'];
+    $gender = $_POST['gender'];
+    $age = $_POST['age'];
+    $interest = $_POST['interest'];
+    $contribution = $_POST['contribution'];
+    $yesno = $_POST['yesno'];
+    $comments = $_POST['comments'];
     
-    echo "<h1>Thank you $first_name for filling out this form!</h1>";
+    echo "<h1>Thank you $first_name , for filling out this form!</h1>";
     
     echo "<p>First Name: $first_name</p>";
     echo "<p>Last Name: $last_name</p>";
