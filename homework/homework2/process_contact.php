@@ -21,7 +21,16 @@
     echo "<p>Signed up for mailing: $yesno</p>";
     echo "<p>Comment: $comments</p>";
     
+    // output for yesno signed up for mailing
+    if(isset($_POST['yesno']) && $_POST['yesno'] == 'yes') {
+        
+        echo "Signed up for mailing!";
+        
+    } else { 
     
+        echo "Did not sign up for mailing";
+        
+    }
   
   
   
