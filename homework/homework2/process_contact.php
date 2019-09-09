@@ -33,16 +33,13 @@
     // output for interests
     
     if(!empty($_POST['interest'])) {
-// Counting number of checked checkboxes.
-    $interest = count($_POST['interest']);
-    echo "You have selected following ".$interest." option(s): <br/>";
-    }
 // Loop to store and display values of individual checked checkbox.
     foreach($_POST['interest'] as $selected) {
     echo "<p>".$selected ."</p>";
+        }
     }
     else{
-    echo "<b>Please Select Atleast One Option.</b>";
+    echo "<b>You did not choose any interests.</b>";
     }
     
 
