@@ -16,7 +16,7 @@
     echo "<p>Email: $email</p>";
     echo "<p>Gender: $gender</p>";
     echo "<p>Age: $age</p>";
-    echo "<p>Contribution: '$' $contribution</p>";
+    echo "<p>Contribution: $ $contribution</p>";
     echo "<p>Comment: $comments</p>";
     
     // output for yesno signed up for mailing
@@ -33,7 +33,7 @@
     // output for interests
     
     if(!empty($_POST['interest'])) {
-// Loop to store and display values of individual checked checkbox.
+    echo "Your interest(s):";
     foreach($_POST['interest'] as $selected) {
     echo "<p>".$selected ."</p>";
         }
