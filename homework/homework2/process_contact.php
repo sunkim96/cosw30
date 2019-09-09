@@ -31,7 +31,7 @@
     }
     
     // output for interests
-    if(isset($_POST['interest'])){
+    
     if(!empty($_POST['interest'])) {
 // Counting number of checked checkboxes.
     $interest = count($_POST['interest']);
@@ -44,7 +44,7 @@
     else{
     echo "<b>Please Select Atleast One Option.</b>";
     }
-    }
+    
 
   
   
