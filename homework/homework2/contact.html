@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Political Campaign</title>
+    </head>
+    <body>
+        <h1>Rick for President!</h1>
+        
+        
+        <form action="process_contact.php" method="POST">
+            <!-- first and last name, email !-->
+            <label for="first_name">First Name</label>
+            <input type="text" id="first_name" name="first_name" required><br>
+            
+            <label for="last_name">Last Name</label>
+            <input type="text" id="last_name" name="last_name" required><br>
+            
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required><br>
+            
+            
+            <!-- gender as a dropdown !-->
+            <select name="gender" required>
+                <option value ="male">Male</option>
+                <option value ="female">Female</option>
+                <option value ="other"></option>Other</option>
+                <option value ="none"></option>Prefer Not to Say</option>
+            </select><br>
+            
+            <!-- age with radio !-->
+            <label for="age" requried>Age</label><br>
+                <input type="radio" name="age" value="18-27"> 18-27<br>
+                <input type="radio" name="age" value="28-40"> 28-40<br>
+                <input type="radio" name="age" value="40-60"> 40-60+<br>
+            
+            <!-- interesting things, checkboxes for these options !-->
+            <label for="interests">We want to know a little more about you!</label><br>
+                <input type="checkbox" name="portalgun" value="portalgun"> Own a Portal Gun<br>
+                <input type="checkbox" name="science" value="science"> Loves science <br>
+                <input type="checkbox" name="pickles" value="pickles"> Transformed into a pickle<br>
+                <input type="checkbox" name="morty" value="morty"> Own a Morty<br>
+                <input type="checkbox" name="schezwan" value="schezwan"> Tried Schezwan sauce<br>
+                <input type="checkbox" name="" value=""> <br>
+                
+                
+              <label for="contribution">Your Contribution</label>  
+              <input type="number" name="cont" min="0">
+             
+              
+              <!-- mailing list yes or no !-->
+             <label for="yesno">Sign up for our mailing list?</label><br>
+              <input type="checkbox" name="yes" value="yes" checked> Yes<br>
+              <input type="checkbox" name="no" value="no"> No<br>
+            
+            <textarea name="comments" id="comments">Type your comments here!</textarea>
+            <button>Submit</button>
+        </form>
+        
+        
+        
+    </body>
+    
+    
+    
+    
+    
+</html>
