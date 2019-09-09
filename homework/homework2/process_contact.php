@@ -16,7 +16,6 @@
     echo "<p>Email: $email</p>";
     echo "<p>Gender: $gender</p>";
     echo "<p>Age: $age</p>";
-    echo "<p>Interests: $interest</p>";
     echo "<p>Contribution: $contribution</p>";
     echo "<p>Comment: $comments</p>";
     
@@ -32,22 +31,19 @@
     }
     
     // output for interests
-    if(empty($interest)) {
-        
-        echo "You did not select any interests!";
-        
-    } else {
-        
-        $N = count($interest);
-        
-        echo("You selected $N :");
-        
-        for($i=0; $i < $N; $i++)
-        {
-            echo($interest[$i] . "");
-        }
+    if(!empty($_POST['interest'])) {
+// Counting number of checked checkboxes.
+    $checked_count = count($_POST['interest']);
+    echo "You have selected following ".$interest." option(s): <br/>";
+
+// Loop to store and display values of individual checked checkbox.
+    foreach($_POST['interest'] as $selected) {
+    echo "<p>".$selected ."</p>";
     }
-  
+    else{
+    echo "<b>Please Select Atleast One Option.</b>";
+    }
+}
   
   
   
