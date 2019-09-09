@@ -18,18 +18,34 @@
     echo "<p>Age: $age</p>";
     echo "<p>Interests: $interest</p>";
     echo "<p>Contribution: $contribution</p>";
-    echo "<p>Signed up for mailing: $yesno</p>";
     echo "<p>Comment: $comments</p>";
     
     // output for yesno signed up for mailing
     if(isset($_POST['yesno']) && $_POST['yesno'] == 'yes') {
         
-        echo "Signed up for mailing!";
+        echo "<p>Mailing: Signed up for mailing!</p>";
         
     } else { 
     
-        echo "Did not sign up for mailing";
+        echo "<p>Mailing: Did not sign up for mailing</p>";
         
+    }
+    
+    // output for interests
+    if(empty($interest)) {
+        
+        echo "You did not select any interests!";
+        
+    } else {
+        
+        $N = count($interest);
+        
+        echo("You selected $N :");
+        
+        for($i=0; $i < $N; $i++)
+        {
+            echo($interest[$i] . "");
+        }
     }
   
   
