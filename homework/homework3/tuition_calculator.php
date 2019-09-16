@@ -11,19 +11,19 @@ $tuition = $residency * $units;
 $total = $service + $parking + $healthfee + $tuition;
 $total2 = $total - $scholar;
 
-echo "<p>Cost of Tuition: $tuition</p>";
+echo "<p>Cost of Tuition: $ $tuition</p>";
 
-echo "<p>Health Fee: $healthfee</p>";
+echo "<p>Health Fee: $ $healthfee</p>";
 
-echo "<p>College Services Card: $service</p>";
+echo "<p>College Services Card: $ $service</p>";
 
-echo "<p>Parking Permit: $parking</p>";
+echo "<p>Parking Permit: $ $parking</p>";
 
-echo "<p>Total Registration Costs: $total</p>";
+echo "<p>Total Registration Costs: $ $total</p>";
 
-echo "<p>Academic Scholarship: $scholar</p>";
+echo "<p>Academic Scholarship: $ $scholar</p>";
 
-echo "<p>Total Due: $total2</p>";
+echo "<p>Total Due: $ $total2</p>";
 
 
 ?>
