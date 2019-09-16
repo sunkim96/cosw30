@@ -1,0 +1,80 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Tuition Calculator</title>
+         </head>
+    <body>
+        <h1>LBCC Tuition</h1>
+        
+        
+        <form action="tuition_calculator.php" method="POST">
+            
+            
+       
+            <!-- resident or non-resident !-->
+            <p>Are you a resident of the state of California? 
+            <select name="residency">
+                <option value="46">Resident</option>
+                <option value="236">Non-Resident</option>
+            </select></p>
+            
+            <!-- number of units as dropdown !-->
+            <p>Number of Units: <select name="units">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+                <option value="13">13</option>
+                <option value="14">14</option>
+                <option value="15">15</option>
+                <option value="16">16</option>
+                <option value="17">17</option>
+                <option value="18">18</option>
+                <option value="19">19</option>
+                <option value="20">20</option>
+                <option value="21">21</option>
+            </select></p>
+            
+           
+            
+            <p> There is a <strong>MANDATORY</strong> Student Health Fee: <input type="hidden" name ="healthfee" value="20" />$20</p>
+            
+                
+              <h4>Optional Fees:</h4>
+             
+             <p>College Services Card:
+             <select name="service">
+                <option value="20">Yes </option>
+                <option value="0">No </option>
+                </select></p>
+
+            <p>Parking Permit: 
+            <select name="parking">
+                <option value="20">Yes </option>
+                <option value="0">No </option>
+                </select></p>
+              
+              
+            
+            
+            <button>Submit</button>
+        </form>
+        
+        
+        
+    </body>
+    
+    
+    
+    
+    
+</html>
