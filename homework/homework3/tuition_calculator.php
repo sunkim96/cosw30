@@ -19,7 +19,7 @@ echo "<p>College Services Card: $service</p>";
 
 echo "<p>Parking Permit: $parking</p>";
 
-echo "<p>Total Registration Costs: </p>";
+echo "<p>Total Registration Costs: $total</p>";
 
 echo "<p>Academic Scholarship: $scholar</p>";
 
