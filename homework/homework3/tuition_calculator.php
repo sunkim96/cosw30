@@ -5,8 +5,8 @@ $units = $_POST['units'];
 $service = $_POST['service'];
 $parking = $_POST['parking'];
 $healthfee = $_POST['healthfee'];
-$scholar = rand($min, $max);
-$tuition = $residency + $units;
+$scholar = rand(10, 100);
+$tuition = $residency * $units;
 
 $total = $service + $parking + $healthfee + $tuition;
 $total2 = $total - $scholar;
