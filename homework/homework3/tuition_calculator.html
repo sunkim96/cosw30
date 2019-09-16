@@ -3,18 +3,44 @@
     <head>
         <meta charset="utf-8">
         <title>Tuition Calculator</title>
+       
+       <style>
+       @import url('https://fonts.googleapis.com/css?family=Manjari&display=swap');
+          
+      h1, h3 {
+        text-align: center;
+        color: #DC143C;
+        font-family: 'Manjari', sans-serif;
+    }
+
+    #container {
+        background-color: #fffae6 ;
+       text-align: center; 
+       border-style: double;
+       border-color: #DC143C;
+       border-radius: 6px;
+       font-family: 'Manjari', sans-serif;
+    }
+
+    button {
+       font-family: 'Manjari', sans-serif;
+       border-radius: 12px;
+       background-color: #DC143C;
+       height: 30px;
+       width: 60px;
+       color: white;
+}
+       
+       </style>
          </head>
     <body>
         <h1>LBCC Tuition</h1>
-        
-        
+     <div id=container>
         <form action="tuition_calculator.php" method="POST">
-            
-            
-       
+           
+         
             <!-- resident or non-resident !-->
-            <p>Are you a resident of the state of California? 
-            <select name="residency">
+            <p>Are you a resident of the state of California? <select name="residency">
                 <option value="46">Resident</option>
                 <option value="236">Non-Resident</option>
             </select></p>
@@ -46,19 +72,17 @@
             
            
             
-            <p> There is a <strong>MANDATORY</strong> Student Health Fee: <input type="hidden" name ="healthfee" value="20" />$20</p>
+            <p> There is a <strong>MANDATORY</strong> Student Health Fee: <input type="hidden" name ="healthfee" value="20"/>$20</p>
             
                 
-              <h4>Optional Fees:</h4>
+              <h3>Optional Fees:</h3>
              
-             <p>College Services Card:
-             <select name="service">
+             <p>College Services Card: $20 <select name="service">
                 <option value="20">Yes </option>
                 <option value="0">No </option>
                 </select></p>
 
-            <p>Parking Permit: 
-            <select name="parking">
+            <p>Parking Permit: $20 <select name="parking">
                 <option value="20">Yes </option>
                 <option value="0">No </option>
                 </select></p>
@@ -68,7 +92,7 @@
             
             <button>Submit</button>
         </form>
-        
+       </div>
         
         
     </body>
