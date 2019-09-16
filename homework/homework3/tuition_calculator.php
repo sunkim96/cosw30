@@ -5,25 +5,25 @@ $units = $_POST['units'];
 $service = $_POST['service'];
 $parking = $_POST['parking'];
 $healthfee = $_POST['healthfee'];
-$number = rand($min, $max);
+$scholar = rand($min, $max);
+$tuition = $residency + $units;
 
-if ($residency == 46) {
-    echo "Cost of Tuition: $units + $residency";
-} else {
-    echo "Cost of Tuition: $units + $residency";
-}
+$total = $service + $parking + $healthfee + $tuition;
+$total2 = $total - $scholar;
 
-echo "Health Fee: $healthfee";
+echo "<p>Cost of Tuition: $tuition</p>";
 
-echo "College Services Card: $service";
+echo "<p>Health Fee: $healthfee</p>";
 
-echo "Parking Permit: $parking";
+echo "<p>College Services Card: $service</p>";
 
-echo "Total Registration Costs: $residency + $healthfee + $service + $parking";
+echo "<p>Parking Permit: $parking</p>";
 
-echo "Academic Scholarship: $number";
+echo "<p>Total Registration Costs: </p>";
 
-echo "Total Due: $residency + $healthfee + $service + $parking - $number";
+echo "<p>Academic Scholarship: $scholar</p>";
+
+echo "<p>Total Due: $total2</p>";
 
 
 ?>
