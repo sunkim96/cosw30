@@ -16,18 +16,20 @@ echo $textlength;
 echo "<p>Your Quote Alphabetized:</p>";
 sort($text);
 
-for($x = 0; $x < $textlength; $x++) {
-    echo $text[$x];
+for($i = 0; $i < $textlength; $i++) {
+    echo $text[$i];
     echo "<br>";
+}
 
 
 //output the list reverse alphabetized 
 echo "<p>Your Quote In Reverse</p>";
 rsort($text);
 
-for($x = 0; $x < $textlength; $x++) {
-    echo $text[$x];
+for($i = 0; $i < $textlength; $i++) {
+    echo $text[$i];
     echo "<br>";
+}
 
 
 // add three new words, output text w/new array and count
@@ -35,14 +37,11 @@ $great = array("Wow", "Amazing", "Great Job");
 
 echo "<p>Some Additional Words:</p>";
 echo $textExplode;
-for($x = 0; $x < $textlength; $x++) {
-    echo $text[$x];
-    echo "<br>";
+for($i = 0; $i < $textlength; $i++) {
+    echo $text[$i];
+    echo $great;
 }
 echo $textlength; 
-
-
-
 
 
 ?>
