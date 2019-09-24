@@ -5,8 +5,8 @@ $text = $_POST['text'];
 $count = count($textExplode);
 // output the list originally with count
 echo "Your Original Quote:";
-echo $text;
-echo $count;
+echo "<p>$text</p>";
+echo "<p>$count</p>";
 
 // output the list alphabetized
 sort($textExplode);
@@ -25,7 +25,8 @@ for($i = 0; $i < $count; $i++) {
 }
 
 // add 3 words to the end output new array list with count
-
+$text = $_POST['text'];
+$textExplode = explode(' ', $text);
 echo $textExplode;
 $new = array("You", "Got", "This");
 echo "<br>";
