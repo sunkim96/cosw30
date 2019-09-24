@@ -8,7 +8,7 @@ echo "Your Original Quote: $quote $count";
 
 // output the list alphabetized
 sort($quote);
-for($i = 0; < $count; $i++) {
+for($i = 0; $i < $count; $i++) {
     echo $quote[$i];
     echo "<br>";
 }
