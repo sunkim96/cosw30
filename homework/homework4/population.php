@@ -20,12 +20,12 @@ $city = array
     
     );
 
-$cities = ksort($city);
+
 for ($row = 0; $row < 15; $row++) {
   echo "<p><b>Row number $row</b></p>";
   echo "<ul>";
   for ($col = 0; $col < 2; $col++) {
-    echo "<li>".$cities[$row][$col]."</li>";
+    echo "<li>".$city[$row][$col]."</li>";
   }
   echo "</ul>";
 }
