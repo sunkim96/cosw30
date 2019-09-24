@@ -25,12 +25,11 @@ for($i = 0; $i < $count; $i++) {
 }
 
 // add 3 words to the end output new array list with count
-$text = $_POST['text'];
-$textExplode = explode(' ', $text);
-echo $textExplode;
 $new = array("You", "Got", "This");
+echo $text;
 echo "<br>";
-echo ">New Words" . $new[0] . "," . $new[1] . "," . $new[2] . " " ;
+echo "<p>New Words:</p>" . $new[0] . "" . $new[1] . "" . $new[2] . " " ;
+echo "<br>";
 echo $count;
 echo "<br>";
 echo count($new);
