@@ -6,7 +6,7 @@ $city = array
         array("Los Angeles, California", 3999759),
         array("Chicago, Illinois", 2716450),
         array("Houston, Texas", 2312717),
-        array("Phoeniz, Arizona", 1626078),
+        array("Phoenix, Arizona", 1626078),
         array("Philadelphia, Pennsylvania", 1580862),
         array("San Antonia, Texas", 1511946),
         array("San Diego, California", 1419516),
@@ -20,7 +20,14 @@ $city = array
     
     );
 
-echo ksort($city); 
+for ($row = 0; $row < 15; $row++) {
+  echo "<p><b>Row number $row</b></p>";
+  echo "<ul>";
+  for ($col = 0; $col < 2; $col++) {
+    echo "<li>".$city[$row][$col]."</li>";
+  }
+  echo "</ul>";
+}
 
 
 
