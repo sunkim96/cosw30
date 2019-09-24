@@ -1,15 +1,16 @@
 <?php
 
 $text = $_POST['text'];
-$quote = array($text);
-$count = count($quote);
+ $textExplode = explode(' ', $text);
+$count = count($textExplode);
 // output the list originally with count
-echo "Your Original Quote: $quote $count";
+echo "Your Original Quote: $textExplode $count";
 
 // output the list alphabetized
-sort($quote);
+sort($textExplode);
 for($i = 0; $i < $count; $i++) {
-    echo $quote[$i];
+    echo "<p>Your Quote Alphabetized: </p>";
+    echo $textExplode[$i];
     echo "<br>";
 }
 
