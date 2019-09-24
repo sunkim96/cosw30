@@ -20,7 +20,7 @@ $city = array
     
     );
 
-echo ksort($city); 
+echo sort($city); 
 
 
 
