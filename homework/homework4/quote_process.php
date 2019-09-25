@@ -31,7 +31,7 @@ echo "<br>";
 echo "<p>$text</p>";
 echo count($new);
 echo "<br>";
-echo count;
+echo "<p>$count</p>";
 
 
 // remove first three letters 
