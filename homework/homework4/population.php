@@ -30,7 +30,7 @@ $multiarray = array
   echo "</ul>";
 }
 */
-
+array_multisort($multiarray, SORT_ASC);
 $count = 0;
 
 foreach ($multiarray as $arrays){
