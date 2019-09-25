@@ -26,7 +26,7 @@ for($i = 0; $i < $count; $i++) {
 
 // add 3 words to the end output new array list with count
 $new = array("You", "Got", "This");
-echo $text;
+echo "<p>$text</p>";
 echo "<br>";
 echo "<p>New Words:</p>" . $new[0] . "" . $new[1] . "" . $new[2] . " " ;
 echo "<br>";

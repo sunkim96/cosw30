@@ -1,5 +1,5 @@
 <?php
-
+echo "<p>First Table</p>";
 $multiarray = array 
     ( 
         array("city state"=>"New York, New York", "population"=>8622698),
