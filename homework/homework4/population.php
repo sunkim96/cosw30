@@ -2,21 +2,21 @@
 
 $multiarray = array 
     ( 
-        array("name"=>"New York, New York", "value"=>8622698),
-        array("name"=>"Los Angeles, California", "value"=>3999759),
-        array("name"=>"Chicago, Illinois", "value"=>2716450),
-        array("name"=>"Houston, Texas", "value"=>2312717),
-        array("name"=>"Phoenix, Arizona", "value"=>1626078),
-        array("name"=>"Philadelphia, Pennsylvania", "value"=>1580862),
-        array("name"=>"San Antonia, Texas", "value"=>1511946),
-        array("name"=>"San Diego, California", "value"=>1419516),
-        array("name"=>"Dallas, Texas", "value"=>1341075),
-        array("name"=>"San Jose, California", "value"=>1035317),
-        array("name"=>"Austin, Texas", "value"=>950715),
-        array("name"=>"Jacksonville, Florida", "value"=>892062),
-        array("name"=>"San Francisco, California", "value"=>884363),
-        array("name"=>"Columbus", "value"=>879170),
-        array("name"=>"Fort Worth", "value"=>874168)
+        array("city state"=>"New York, New York", "population"=>8622698),
+        array("city state"=>"Los Angeles, California", "population"=>3999759),
+        array("city state"=>"Chicago, Illinois", "population"=>2716450),
+        array("city state"=>"Houston, Texas", "population"=>2312717),
+        array("city state"=>"Phoenix, Arizona", "population"=>1626078),
+        array("city state"=>"Philadelphia, Pennsylvania", "population"=>1580862),
+        array("city state"=>"San Antonia, Texas", "population"=>1511946),
+        array("city state"=>"San Diego, California", "population"=>1419516),
+        array("city state"=>"Dallas, Texas", "population"=>1341075),
+        array("city state"=>"San Jose, California", "population"=>1035317),
+        array("city state"=>"Austin, Texas", "population"=>950715),
+        array("city state"=>"Jacksonville, Florida", "population"=>892062),
+        array("city state"=>"San Francisco, California", "population"=>884363),
+        array("city state"=>"Columbus", "population"=>879170),
+        array("city state"=>"Fort Worth", "population"=>874168)
     
     );
 
@@ -37,12 +37,12 @@ foreach ($multiarray as $arrays){
     $count++;
     echo "<table>" ;               
 
-    echo "<span>table $count</span>";
+    echo "<span>Rank $count</span>";
     echo "<tr>";
-    foreach ($arrays as $names => $value){
+    foreach ($arrays as $citystate => $population){
 
-        echo "<th>$names</th>";
-        echo "<td>$value</td>";
+        echo "<th>$citystate</th>";
+        echo "<td>$population</td>";
 
     }
     echo "</tr>";
