@@ -27,11 +27,11 @@ for($i = 0; $i < $count; $i++) {
 // add 3 words to the end output new array list with count
 $new = array("You", "Got", "This");
 echo "<p>New Words:</p>" . $new[0] . "" . $new[1] . "" . $new[2] . " " ;
+echo "<br>";
 echo "<p>$text</p>";
-echo "<br>";
-echo $count;
-echo "<br>";
 echo count($new);
+echo "<br>";
+echo count;
 
 
 // remove first three letters 
