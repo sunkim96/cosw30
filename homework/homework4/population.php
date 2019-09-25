@@ -49,6 +49,7 @@ foreach ($multiarray as $arrays){
     echo "</table>";
 }
 
+echo "<br>";
 
 $secondarray = array 
     ( 
@@ -72,7 +73,7 @@ $secondarray = array
 
 
 
-array_multisort($secondarray, SORT_ASC);
+array_multisort($secondarray, SORT_NUMERIC);
 $count = 0;
 
 foreach ($secondarray as $arrays){
