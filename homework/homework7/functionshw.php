@@ -25,6 +25,8 @@
 <html>
  <title>PHP Formulas</title>
  <body>
+     <h3>Want to Add?</h3>
+     <br>
  <form action="functionshw.php" method="post">
  <input type="text" name="value1" value="0" />
  <input type="text" name="value2" value="0" />
@@ -35,6 +37,8 @@
  echo addtwo($value1+$value2); 
  ?>
  <br>
+     <h3>Want to Subtract?</h3>
+     <br>
  <input type="text" name="value3" value="0" />
  <input type="text" name="value4" value="0" />
  <input type="submit" value="Calculate values"/>
@@ -44,13 +48,15 @@
  echo subtwo($value3-$value4); 
  ?>
   <br>
+      <h3>Want to Multiply?</h3>
+      <br>
  <input type="text" name="value5" value="0" />
  <input type="text" name="value6" value="0" />
  <input type="submit" value="Calculate values"/>
  
  <?php
- echo $value3 . " * " . $value4 . " = ";
- echo subtwo($value5*$value6); 
+ echo $value5 . " * " . $value6 . " = ";
+ echo multitwo($value5*$value6); 
  ?>
  </form>
  </body>
