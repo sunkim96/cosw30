@@ -13,6 +13,13 @@
  $value3 = $_POST['value3'];
  $value4 = $_POST['value4'];
  
+  function multitwo($e = 0, $f = 0)
+ {
+ return ($e * $f);
+ }
+ $value5 = $_POST['value5'];
+ $value6 = $_POST['value6'];
+ 
  
 ?>
 <html>
@@ -27,7 +34,7 @@
  echo $value1 . " + " . $value2 . " = ";
  echo addtwo($value1+$value2); 
  ?>
-
+ <br>
  <input type="text" name="value3" value="0" />
  <input type="text" name="value4" value="0" />
  <input type="submit" value="Calculate values"/>
@@ -35,6 +42,15 @@
  <?php
  echo $value3 . " - " . $value4 . " = ";
  echo subtwo($value3-$value4); 
+ ?>
+  <br>
+ <input type="text" name="value5" value="0" />
+ <input type="text" name="value6" value="0" />
+ <input type="submit" value="Calculate values"/>
+ </form>
+ <?php
+ echo $value3 . " * " . $value4 . " = ";
+ echo subtwo($value5*$value6); 
  ?>
  </body>
 </html>
