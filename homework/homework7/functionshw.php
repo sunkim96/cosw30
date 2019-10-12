@@ -9,7 +9,7 @@
 <html>
  <title>PHP - Add two numbers</title>
  <body>
- <form action="functionhw.php" method="post">
+ <form action="functionshw.php" method="post">
  <input type="text" name="value1" value="0" />
  <input type="text" name="value2" value="0" />
  <input type="submit" value="Calculate values"/>
