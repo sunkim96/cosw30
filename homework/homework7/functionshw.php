@@ -38,7 +38,7 @@
  <input type="text" name="value3" value="0" />
  <input type="text" name="value4" value="0" />
  <input type="submit" value="Calculate values"/>
- </form>
+ 
  <?php
  echo $value3 . " - " . $value4 . " = ";
  echo subtwo($value3-$value4); 
@@ -47,10 +47,11 @@
  <input type="text" name="value5" value="0" />
  <input type="text" name="value6" value="0" />
  <input type="submit" value="Calculate values"/>
- </form>
+ 
  <?php
  echo $value3 . " * " . $value4 . " = ";
  echo subtwo($value5*$value6); 
  ?>
+ </form>
  </body>
 </html>
