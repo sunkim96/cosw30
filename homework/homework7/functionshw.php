@@ -64,7 +64,6 @@ select {
 #container {
   font-family: 'Mansalva', cursive;
    font-size: 15px;
-   background-color: black;
    color: orange;
    text-align: center;
 }
@@ -126,12 +125,12 @@ select {
         echo "$firstvalue / $secondvalue = ";
       	 echo $firstvalue / $secondvalue ;
       } ?>
-     
+     </div>
    
      
      
      </form>
-     </div>
+     
        </div>
     </body>
 
