@@ -25,6 +25,7 @@ form {
    text-align: center;
    margin: 30px 30px 30px 30px;
    font-family: 'Mansalva', cursive;
+   color: orange;
    
 }
 h1, footer{
@@ -89,7 +90,7 @@ section {
      <input type="text" name="secondvalue" value="<?php echo $secondvalue; ?>" placeholder="Insert Here" />
   <br>
      <button type="submit" name="calculate">Calculate</button>
-   <section>
+   
 <?php
      $firstvalue = $_POST['firstvalue'];
      $secondvalue = $_POST['secondvalue'];
@@ -125,15 +126,15 @@ section {
         echo "$firstvalue / $secondvalue = ";
       	 echo $firstvalue / $secondvalue ;
       } ?>
-     </section>
+    
    
      
      
      </form>
      
        </div>
-    <footer>Sun Kim @Homework 7 2019</footer>
+    
     </body>
 
- 
+ <footer>Sun Kim @Homework 7 2019</footer>
 </html>
