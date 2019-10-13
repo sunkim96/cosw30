@@ -39,21 +39,18 @@
       }
       elseif ($_REQUEST['operations'] == '-')
       { 
-       <br>
       	   echo $firstvalue "-" $secondvalue "=";
           echo $firstvalue - $secondvalue;
   
       }
       elseif ($_REQUEST['operations'] == '*')
       {
-       <br>
       	echo $firstvalue "*" $secondvalue "=";
        echo $firstvalue * $secondvalue;  
 
       }
       elseif ($_REQUEST['operations'] == '/')
       { 
-       <br>
       	 echo $firstvalue "/" $secondvalue "=";
         echo $firstvalue / $secondvalue; 
  
@@ -63,11 +60,6 @@
      
      
      </form>
-     
-     
-     
-     
-     
      
     </body>
 
