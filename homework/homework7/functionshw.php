@@ -29,7 +29,7 @@
     
     
     <body>
-   <from method="POST" class="form-inline">
+   <form action="functionshw.php" method="post">
        <label></label>
        <input type="text" name="firstvalue" value="<?php echo $firstvalue; ?>" placeholder="Insert Here" />
   
