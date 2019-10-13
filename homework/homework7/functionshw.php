@@ -60,6 +60,14 @@ select {
    color: orange;
   
 }
+
+.container {
+  font-family: 'Mansalva', cursive;
+   font-size: 15px;
+   background-color: black;
+   color: orange;
+   text-align: center;
+}
      
     </style>
     
@@ -82,7 +90,7 @@ select {
      <input type="text" name="secondvalue" value="<?php echo $secondvalue; ?>" placeholder="Insert Here" />
   <br>
      <button type="submit" name="calculate">Calculate</button>
-     <div>
+   <div id="container">
 <?php
      $firstvalue = $_POST['firstvalue'];
      $secondvalue = $_POST['secondvalue'];
