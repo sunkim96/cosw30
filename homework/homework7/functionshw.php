@@ -31,27 +31,26 @@
      
      
       if ($_REQUEST['operations'] == '+')
-      	{ 
-      	 <br>
+      	{
       	   echo ($firstvalue "+" $secondvalue "=");
           echo $firstvalue + $secondvalue; 
    
       }
       elseif ($_REQUEST['operations'] == '-')
       { 
-      	   echo ($firstvalue "-" $secondvalue "=");
+      	   
           echo $firstvalue - $secondvalue;
   
       }
       elseif ($_REQUEST['operations'] == '*')
       {
-      	echo ($firstvalue "*" $secondvalue "=");
+      	
        echo $firstvalue * $secondvalue;  
 
       }
       elseif ($_REQUEST['operations'] == '/')
       { 
-      	 echo ($firstvalue "/" $secondvalue "=");
+      	
         echo $firstvalue / $secondvalue; 
  
       } ?>
