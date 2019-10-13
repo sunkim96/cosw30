@@ -32,7 +32,7 @@
      
       if ($_REQUEST['operations'] == '+')
       	{
-      	  
+      	   echo "<p>$firstvalue + $secondvalue =</p>";
           echo $firstvalue + $secondvalue; 
    
       }
