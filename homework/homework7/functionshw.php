@@ -27,7 +27,7 @@ form {
    font-family: 'Mansalva', cursive;
    
 }
-h1 {
+h1, footer{
    text-align: center;
    color: orange;
 }
@@ -61,7 +61,7 @@ select {
   
 }
 
-.container {
+section {
   font-family: 'Mansalva', cursive;
    font-size: 15px;
    color: orange;
@@ -89,7 +89,7 @@ select {
      <input type="text" name="secondvalue" value="<?php echo $secondvalue; ?>" placeholder="Insert Here" />
   <br>
      <button type="submit" name="calculate">Calculate</button>
-   <div id="container">
+   <section>
 <?php
      $firstvalue = $_POST['firstvalue'];
      $secondvalue = $_POST['secondvalue'];
@@ -125,13 +125,14 @@ select {
         echo "$firstvalue / $secondvalue = ";
       	 echo $firstvalue / $secondvalue ;
       } ?>
-     </div>
+     </section>
    
      
      
      </form>
      
        </div>
+    <footer>Sun Kim @Homework 7 2019</footer>
     </body>
 
  
