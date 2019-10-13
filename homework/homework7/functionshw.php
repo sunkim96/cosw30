@@ -1,63 +1,57 @@
-<?php
- function addtwo($a = 0, $b = 0)
- {
- return ($a + $b);
- }
- $value1 = $_POST['value1'];
- $value2 = $_POST['value2'];
- 
- function subtwo($c = 0, $d = 0)
- {
- return ($c - $d);
- }
- $value3 = $_POST['value3'];
- $value4 = $_POST['value4'];
- 
-  function multitwo($e = 0, $f = 0)
- {
- return ($e * $f);
- }
- $value5 = $_POST['value5'];
- $value6 = $_POST['value6'];
- 
- 
-?>
-<html>
- <title>PHP Formulas</title>
- <body>
-     <h3>Want to Add?</h3>
-     <br>
- <form action="functionshw.php" method="post">
- <input type="text" name="value1" value="0" />
- <input type="text" name="value2" value="0" />
- <input type="submit" value="Calculate values"/>
+<!doctype html>
 
- <?php
- echo $value1 . " + " . $value2 . " = ";
- echo addtwo($value1+$value2); 
- ?>
- <br>
-     <h3>Want to Subtract?</h3>
-     <br>
- <input type="text" name="value3" value="0" />
- <input type="text" name="value4" value="0" />
- <input type="submit" value="Calculate values"/>
+<?php
+      if ($_REQUEST['operations'] == '+')
+      	{ 
+          echo $firstvalue + $secondvalue; 
+   
+      }
+      elseif ($_REQUEST['operations'] == '-')
+      { 
+       echo $firstvalue - $secondvalue;
+  
+      }
+      elseif ($_REQUEST['operations'] == '*')
+      {
+       echo $firstvalue * $secondvalue;  
+
+      }
+      elseif ($_REQUEST['operations'] == '/')
+      { 
+        echo $firstvalue / $secondvalue; 
  
- <?php
- echo $value3 . " - " . $value4 . " = ";
- echo subtwo($value3-$value4); 
- ?>
-  <br>
-      <h3>Want to Multiply?</h3>
-      <br>
- <input type="text" name="value5" value="0" />
- <input type="text" name="value6" value="0" />
- <input type="submit" value="Calculate values"/>
+      } ?>
+<html>
+ <head>
+        <meta charset="utf-8">
+        <title></title>
+    <style></style>
+    
+    
+    <body>
+   <from method="POST" class="form-inline">
+       <label></label>
+       <input type="text" name="firstvalue" value="<?php echo $firstvalue; ?>" placeholder="Insert Here" />
+  
+     
+      <select size="1" name="operations">
+         <option value="+">+</option>
+         <option value="-">-</option>
+         <option value="*">*</option>
+         <option value="/">/</option>
+      </select>
+     
+     <input type="text" name="secondvalue" value="<?php echo $secondvalue; ?>" placeholder="Insert Here" />
+  
+     <button type="submit" name="calculate">Calculate</button>
+     </form>
+     
+     
+     
+     
+     
+     
+    </body>
+
  
- <?php
- echo $value5 . " * " . $value6 . " = ";
- echo multitwo($value5*$value6); 
- ?>
- </form>
- </body>
 </html>
