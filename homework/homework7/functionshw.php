@@ -82,7 +82,7 @@ select {
      <input type="text" name="secondvalue" value="<?php echo $secondvalue; ?>" placeholder="Insert Here" />
   <br>
      <button type="submit" name="calculate">Calculate</button>
-     
+     <div>
 <?php
      $firstvalue = $_POST['firstvalue'];
      $secondvalue = $_POST['secondvalue'];
@@ -119,10 +119,11 @@ select {
       	 echo $firstvalue / $secondvalue ;
       } ?>
      
-     
+   
      
      
      </form>
+     </div>
        </div>
     </body>
 
