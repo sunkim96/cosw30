@@ -32,29 +32,30 @@
      
       if ($_REQUEST['operations'] == '+')
       	{
-      	   echo "<p>$firstvalue + $secondvalue =</p>" $firstvalue + $secondvalue ;
+      	   echo "$firstvalue + $secondvalue =";
+      	   echo $firstvalue + $secondvalue ;
           
       }
       elseif ($_REQUEST['operations'] == '-')
       { 
       	   
-          echo "<p>$firstvalue - $secondvalue =</p>" $firstvalue - $secondvalue ;
-          
+          echo "$firstvalue - $secondvalue =";
+      	   echo $firstvalue - $secondvalue ;
   
       }
       elseif ($_REQUEST['operations'] == '*')
       {
       	
-      echo "<p>$firstvalue * $secondvalue =</p>" $firstvalue * $secondvalue ;
+       echo "$firstvalue * $secondvalue =";
+      	   echo $firstvalue * $secondvalue ;
            
 
       }
       elseif ($_REQUEST['operations'] == '/')
       { 
       	
-       echo "<p>$firstvalue / $secondvalue =</p>" $firstvalue / $secondvalue ;
-          
- 
+        echo "$firstvalue / $secondvalue =";
+      	   echo $firstvalue / $secondvalue ;
       } ?>
      
      
