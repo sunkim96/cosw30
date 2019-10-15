@@ -26,11 +26,13 @@ form {
    margin: 30px 30px 30px 30px;
    font-family: 'Mansalva', cursive;
    color: orange;
+   font-size: 20px;
    
 }
 h1, footer{
    text-align: center;
    color: orange;
+   font-family: 'Mansalva', cursive;
 }
 button {
    font-family: 'Mansalva', cursive;
@@ -59,6 +61,7 @@ select {
    margin: 6px;
    background-color: black;
    color: orange;
+   font-size: 18px;
   
 }
 
