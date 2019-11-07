@@ -23,6 +23,8 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
     $errors = [];
     if(condition) {
         $errors[] = 'Error message';
+    } else {
+
     }
 
 

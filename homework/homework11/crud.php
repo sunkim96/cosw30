@@ -15,10 +15,9 @@ $query = 'SELECT * FROM USER_KIM';
 $result = mysqli_query($connection, $query);
 // Check if the database returned anything
 if($result) {
-    while($row = mysqli_fetch_array($result)){
-        // Output the results
-        $username = mysqli_fetch_assoc($result);
-    }
+    // If the database query was successful, store
+    // the array of users into a variable
+    $rows = mysqli_fetch_all($result);
 } else {
     // Output an error
 }
@@ -67,8 +66,9 @@ if($result) {
                 <td>'.$row['last_name'].'</td>
                 <td>'.$row['email'].'</td>
                 <td>'.$row['password'].'</td>
-                <td><a href="crud2.php?id='.$row['user_id'].'">Edit</a></td>
+                <td><a href="update.php?id='.$row['user_id'].'">Edit</a></td>
             </tr>';
+        }
             ?>
         </tbody>
     </table>
