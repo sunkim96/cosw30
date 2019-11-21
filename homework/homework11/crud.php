@@ -1,76 +1,72 @@
 <?php
 // Add the database connection
 include('database.php');
-/*   CHECK IF THE FORM HAS BEEN SUBMITTED AND INSERT
-*    NEW USER INTO THE DATABASE
-*/
+
+
 if($_SERVER['REQUEST_METHOD'] == 'POST') {
-}
-/*
-*   QUERY THE DATABASE AND STORE ALL USERS INTO A VARIABLE
-*/
-// Create your query
-$query = 'SELECT * FROM USER_KIM';
-// Run your query
-$result = mysqli_query($connection, $query);
-// Check if the database returned anything
-if($result) {
-    // If the database query was successful, store
-    // the array of users into a variable
-    $rows = mysqli_fetch_all($result);
+
+$errors = [];
+
+if (empty($_POST['first_name'])) {
+    $errors[] = "You forgot to enter your first name.";
 } else {
-    // Output an error
+    $fn = trim($_POST['first_name']);
 }
+if (empty($_POST['last_name'])) {
+    $errors[] = "You forgot to enter your last name.";
+} else {
+    $ln = trim($_POST['last_name']);
+}
+
+if (empty($_POST['email'])) {
+    $errors[] = "You forgot to enter your email.";
+} else {
+    $e = trim($_POST['email']);
+}
+}
+if (!empty($_POST['pass1'])) {
+    if($_POST['pass1'] != $_POST['pass2']){
+    $errors[] = "Your password did not match the confirmed password.";
+    } else {
+    $p = trim($_POST['pass1']);
+    }
+} else {
+    $errors[] = "You forgot to enter your password.";
+
+}
+
+if (empty($errors)) {
+    require('database.php');
+
+    $q = "INSERT INTO USER_KIM (first_name, last_name, email, pass1) VALUES
+    ('$fn', '$ln', '$e', SHA2('$p', 512), NOW() )";
+    $r = @mysqli_query($dbc, $q);
+
+    if ($r) {
+        echo "<h1> Thank you!</h1> <p> You are now registered!</p>";
+    } else {
+        echo "<p>You were not able to register, please try again!</p>";
+    }
+mysqli_close($dbc);
+exit();
+
+}
+
 ?>
 
-<!doctype html>
-<html>
-<head>
-    <title>My First CRUD</title>
-</head>
-<body>
-    <form action="crud.php" method="POST">
-        <label for="first_name">First Name</label>
-        <input type="text" id="first_name" name="first_name">
+<h1>Register</h1>
 
-        <label for="last_name">Last Name</label>
-        <input type="text" id="last_name" name="last_name">
-
-        <label for="email">Email</label>
-        <input type="email" id="email" name="email">
-
-        <label for="password">Password</label>
-        <input type="password" id="password" name="password">
-
-        <!--Add a second password input so the user has to retype their password -->
+<form action="crud.php" method="POST">
+    <p>First Name: <input type="text" name="first_name"
+    value="<?php if (isset($_POST['first_name'])) echo $_POST['first_name']; ?>"></p>
+    <p>Last Name: <input type="text" name="last_name"
+    value="<?php if (isset($_POST['last_name'])) echo $_POST['last_name']; ?>"></p>
+    <p>Email: <input type="email" name="email"
+    value="<?php if (isset($_POST['email'])) echo $_POST['email']; ?>"></p>
+    <p>Password: <input type="password" name="pass1"
+    value="<?php if (isset($_POST['pass1'])) echo $_POST['pass1']; ?>"></p>
+     <p>Confirm Password: <input type="password" name="pass2"
+    value="<?php if (isset($_POST['pass2'])) echo $_POST['pass2']; ?>"></p>
 
         <button>Register</button>
     </form>
-
-    <h2>Output a List of Users</h2>
-    <table>
-        <thead>
-            <tr>
-                <th>First Name</th>
-                <th>Last Name</th>
-                <th>Email</th>
-                <th>Password</th>
-                <th>Edit</th>
-            </tr>
-        </thead>
-        <tbody>
-            <?php
-            foreach($rows as $row){
-            echo '<tr>
-                <td>'.$row['first_name'].'</td>
-                <td>'.$row['last_name'].'</td>
-                <td>'.$row['email'].'</td>
-                <td>'.$row['password'].'</td>
-                <td><a href="update.php?id='.$row['user_id'].'">Edit</a></td>
-            </tr>';
-        }
-            ?>
-        </tbody>
-    </table>
-</body>
-</html>
