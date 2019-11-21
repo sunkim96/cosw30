@@ -16,7 +16,7 @@ include('includes/database.php');
 
     <h1>You Logged In! Hello <?php echo $_SESSION['first_name']; ?></h1>
 
-  // <h2>Here's a list of other users</h2>
+  <h2>Here's a list of other users</h2>
 
     <table class="table table-striped">
         <thead class="thead-dark">

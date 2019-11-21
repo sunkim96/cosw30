@@ -4,10 +4,10 @@ session_start();
 // If they are, redirect to welcome.php
 
 
-//if(!isset($_SESSION['user_id'])) {
-//header('Location: welcome.php');
-   // exit;
-//}
+if(isset($_SESSION['user_id'])) {
+header('Location: welcome.php');
+ exit;
+}
 
 include('includes/header.php');
 include('includes/database.php');
@@ -29,7 +29,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
     $result = mysqli_query($connection, $query);
 
     // If they are, log them in
-    if($result) {
+    if(mysqli_num_rows($result)) {
         $user = mysqli_fetch_assoc($result);
         // Add their user id to the $_SESSION
             $_SESSION['user_id'] = $user['user_id'];
